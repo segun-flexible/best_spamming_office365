@@ -1,0 +1,74 @@
+<!-- footer-area start -->
+<div class="header-bottom-area mb-40  d-none d-sm-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 d-none d-md-block">
+                <div class="header-banner">
+                    
+                        <%if(ads1170A){%>
+                            <a href="<%=ads1170A.a_link%>"><img style="width: 100%;height: 140px;object-fit: cover;" src="<%=ads1170A.a_banner%>" alt=""></a>
+                        <%}else{%>
+                            <img src="/general/images/banner3.png" alt="">
+                        <%}%>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer-area">
+
+    <div class="footer-bottom-area">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-6 col-12 mt-2 mb-2 text-center" >
+                    <H2>BECOME A COUPON VENDOR NOW!</H2>
+                    <a href="https://wa.me/message/VCGKIQ2VBDL6H1" class="btn btn-info btn-block mb-3">REQUEST ACCESS</a>
+                    
+                </div>
+                                    <div class="col-md-6 col-12 mb-2">
+                        <div class="header-top-right text-right">
+                            <ul class="social">
+                                <li><a href="<%=websiteDetails.website_facebook%>" class="facebook"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                <li><a href="<%=websiteDetails.website_twitter%>" class="twitter"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                <li><a href="<%=websiteDetails.website_youtube%>" class="youtube"><i class="fa fa-youtube"></i> Youtube</a></li>
+                                <li><a href="<%=websiteDetails.website_instagram%>" class="instagram"><i class="fa fa-instagram"></i> Instagram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="col-12">
+                    <div class="copyright text-center">
+                        <hr><br>
+                        <p>Copyright © <script>document.write(new Date().getFullYear())</script>&nbsp; Youtellar. All Right Reserved.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- footer-area end -->
+<!-- jquery latest version -->
+<%-websiteDetails.website_footer_code%>
+<script src="/user/js/lib/cute-alert.js"></script>
+<script src="/user/js/fetcher.js"></script>
+<script src="/general/js/vendor/jquery-2.2.4.min.js"></script>
+<!-- popper.min.js -->
+<script src="/general/js/vendor/popper.min.js"></script>
+<!-- bootstrap js -->
+<script src="/general/js/bootstrap.min.js"></script>
+<!-- owl.carousel.2.0.0-beta.2.4 css -->
+<script src="/general/js/owl.carousel.min.js"></script>
+<!-- plugins js -->
+<script src="/general/js/plugins.js"></script>
+<!-- main js -->
+<script src="/general/js/scripts.js"></script>
+<script src="/general/js/custom.js"></script>
+
+
+
+</body>
+
+</html>

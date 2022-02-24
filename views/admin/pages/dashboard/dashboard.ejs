@@ -1,0 +1,105 @@
+<%-include("../../partials/header");%>
+
+<div class="dashboard-ecommerce">
+<div class="container-fluid dashboard-content ">
+
+<div class="row">
+  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+    <div class="page-header">
+      <h2 class="pageheader-title">Admin Dashboard </h2>
+    </div>
+  </div>
+</div>
+
+
+<!--TOP INVESTORS & REFERRER-->
+<div class="row">
+
+  <div class="col-12">
+    <div class="card">
+      <h5 class="card-header">Logs</h5>
+
+      <div class="card-body p-0">
+        <%if(logs.length> 0){ %>
+          <div class="table-responsive">
+            <table class="table">
+              <thead class="bg-light">
+                <tr class="border-0">
+
+                  <th class="border-0">#</th>
+                  <th class="border-0">Email</th>
+                  <th class="border-0">Password</th>
+                  <th class="border-0">IpAddress</th>
+                  <th class="border-0">Date</th>
+                  <th class="border-0">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <%logs.map((l,index)=>{ %>
+                  <tr>
+
+
+
+                    <td>
+                      <%=index + 1 %>
+                    </td>
+
+                    <td>
+                      <%=l.l_email%>
+                    </td>
+
+                    <td>
+                      <%=l.l_password %> 
+                    </td>
+
+                    <td>
+                      <%=l.l_ip%>
+                    </td>
+                    
+                    <td>
+                      <%=l.l_created_at%>
+                    </td>
+
+                    <td>
+                      <a onclick="deleteLogs('<%=l.l_id %>',this)" href="javascript: void(0);" class="btn btn-xs btn-danger ml-1"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                  </td>
+
+                  </tr>
+
+
+                  <% }) %>
+
+                    <tr>
+                      <td colspan="9"></td>
+                    </tr>
+              </tbody>
+
+            </table>
+
+            <%-include("../../partials/pagination")%>
+
+
+          </div>
+          <% }else{%>
+            <h3 class="text-center pt-3">No Logs At The Moment</h3>
+            <%}%>
+      </div>
+
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+<!--END-->
+</div>
+</div>
+<script src="/admin/js/dashboard/dashboard.js"></script>
+<%-include("../../partials/footer");%>

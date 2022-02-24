@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html lang="en-us" xml:lang="en-us">
+
+    <head>
+
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+        <!-- custom.min.css  -->
+
+        <link href="/windows/styles/custom-min.css" rel="stylesheet" type="text/css" />        
+        
+
+        <title>Windows Dev Center</title>
+        <meta name="Description" content="Content, samples, downloads, design inspiration,and other resources you need to complete your app or game development project for Windows." />
+        <meta name="Keywords" content="Windows Dev Center, Windows apps, UWP, Universal Windows Platform, Fluent design" />
+        <meta name="Robots" content="noodp" />
+        <link rel="canonical" href="https://developer.microsoft.com/en-us/windows" />
+        <meta charset="utf-8" />
+        <meta name="msvalidate.01" content="CBE08F1BC74642BE0B16449C6DEFACD5" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="cookieCompliance" content="true">
+        
+        <meta name="uhfHeaderId" content="win-dev-center-header">
+        <meta name="uhfFooterId" content="win-dev-center-footer">
+        <meta name="uhfPartnerId" content="DEV_Windows">
+
+
+        <style>
+           
+
+            .cxf-btn-white-lightweight {
+                padding: 10px 10px 6px 10px !important;
+                margin-top: 10px;
+                color: #fff !important;
+            }
+
+            .cxf-typographic-intro {
+                padding: 0px !important;
+                color: white;
+            }
+
+            .cxf-typo-heading {
+                padding: 0 0 3px !important;
+            }
+
+            .cxf-align {
+                margin-left: 68px !important;
+            }
+
+            .cxf-btn-align {
+            margin-left: 8%;
+        }
+
+
+            @media only screen and (max-width: 768px) {
+
+                .cxf-valign {
+                    display: inline-block !important;
+                    text-align: left !important;
+                }
+
+            }
+
+            @media only screen and (max-width: 1083px) {
+
+            }
+
+           @media only screen and (max-width: 539px) {
+
+                .m-hero-item .c-group :nth-child(2) {
+                padding-bottom: 50px !important;
+                margin-top:12px!important;
+
+                }
+
+              .cxf-btn-align {
+               margin-left: 2%;
+        }
+
+            }
+            
+        </style>
+        
+        
+        <script>
+            var msDocs = { data: {}, functions: {} };
+            if (!('Promise' in window && 'resolve' in window.Promise && 'reject' in window.Promise && 'all' in window.Promise && 'race' in window.Promise)) {
+                document.write('<script src="https://static.docs.com/ui/third-party/bluebird/3.5.0/bluebird.min.js"><\/script>');
+            }
+        var splitUrl = window.location.pathname.toLocaleLowerCase().split("/");
+        var pageLocale = splitUrl[1];
+        var mwfCSS = "https://mwf-service.akamaized.net/mwf/css/bundle/1.58.3/west-european/default/mwf-main.min.css";
+        var bidi = false;
+        if (pageLocale === "ar-sa") {
+        mwfCSS = "https://mwf-service.akamaized.net/mwf/css/bundle/1.58.3/arabic/default/mwf-main.min.css";
+        bidi=true;
+        }
+        if (pageLocale === "he-il") {
+        mwfCSS = "https://mwf-service.akamaized.net/mwf/css/bundle/1.58.3/arabic/default/mwf-main.min.css";
+        bidi=true;
+        }
+        
+        var mwfCSSLink = document.createElement("link");
+            mwfCSSLink.rel = "stylesheet";
+            mwfCSSLink.href = mwfCSS;
+            document.getElementsByTagName("head")[0].appendChild(mwfCSSLink);
+        
+        if (bidi) {
+            var ss = document.createElement("link");
+                ss.rel = "stylesheet";
+                ss.href = "/windows/styles/BiDi.css";
+                document.getElementsByTagName("head")[0].appendChild(ss);
+            var ss_1 = document.createElement("link");
+                ss_1.rel = "stylesheet";
+                ss_1.href= "/windows/styles/custom-min_ar-SA.css";
+                document.getElementsByTagName("head")[0].appendChild(ss_1);
+            var ss_2 = document.createElement("link");
+                ss_2.rel = "stylesheet";
+                ss_2.href= "/windows/styles/mwf-custom-bidi-min.css";
+                document.getElementsByTagName("head")[0].appendChild(ss_2);
+        }
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+        <script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script>
+        <script src="https://static.docs.com/ui/third-party/developer.microsoft.com/1.2.0/developer-microsoft-com.js"></script>
+    </head>
+
+    <body>
+
+
+        <div id="headerAreaHolder" ms.pgarea="header" data-bi-name="header">
+            <div id="uhfPlaceHolder" class="c-me">
+            </div>
+        </div>
+
+        <script type="text/javascript"
+            src="https://mwf-service.akamaized.net/mwf/js/bundle/1.58.3/mwf-auto-init-main.var.min.js"></script>
+        <!--mwf-custom-min.css-->
+        
+        <link rel="stylesheet" type="text/css" href="/windows/styles/mwf-custom-min.css" />
+
+        <!-- Harmony code goes here -->
+        
+        <!-- <section role="main" id="cx-root" class="cx-home"> -->
+        <section role="main" id="cx-root">
+
+            <div class="c-dialog f-lightbox" id="cx-lightbox-1" aria-hidden="true">
+                <div role="presentation" tabindex="-1"></div>
+                <button class="c-glyph glyph-cancel" data-js-dialog-hide aria-label="Close dialog" tabindex="0"></button>
+                <div role="dialog" aria-label="Lightbox" tabindex="-1">
+                    <div role="document" class="fluid-iframe">
+                        <div id="cx-video-1">
+                            <!-- OnePlayer injection -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div data-grid="container">
+
+                
+                <section class="m-hero-item f-x-right f-y-center context-accessory theme-dark x-m-b-12x" itemscope="" itemtype="https://schema.org/Product" role="tabpanel" style="border-radius: 8px;">
+                    <picture>
+                        <source srcset="images/hero-1600x600.png" media="(min-width: 1779px)">
+                        <source srcset="images/hero-1600x600.png" media="(min-width: 1400px)">
+                        
+                        <source srcset="images/hero-1083x609.png" media="(min-width:768px)">
+                        
+                        <source srcset="images/hero-539x303.png" media="(min-width:0)">
+                        <img srcset="images/hero-1600x600.png" src="images/hero-1600x600.png" alt="Rounded corners">
+                    </picture>
+                    <div>
+                        <div>
+                            <h1 class="c-heading-2">Introducing Windows 11</h1>
+                            <p class="c-paragraph-1">Start developing for the next version of Windows. Update your existing apps or create brand new experiences with the Windows App SDK.</p>
+                        </div>
+                    </div>
+                </section>
+
+                
+
+                <nav class="cx-c-link-navigation c-link-navigation x-p-v-6x">
+                    <ul class="cxf-valign">
+                        <li>
+                            <a href="/windows/downloads" class="c-hyperlink x-p-r-10x">
+                                <img class="c-image x-visible-inline f-pad-right-3x" alt="SDKs and Tools icon" src="images/SDKs.png">SDKS AND TOOLS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://docs.microsoft.com/learn/browse/?roles=developer&products=windows" class="c-hyperlink x-p-r-10x">
+                                <img class="c-image x-visible-inline f-pad-right-3x" alt="Learn icon" src="images/Tutorials.png">LEARN
+                            </a>
+                        </li>
+                        <li>
+                            <a href="//docs.microsoft.com/windows/apps/get-started/samples" class="c-hyperlink x-p-r-10x">
+                                <img class="c-image x-visible-inline f-pad-right-3x" alt="Samples icon" src="images/samples.png">SAMPLES
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/store/register" class="c-hyperlink x-p-r-10x">
+                                <img class="c-image x-visible-inline f-pad-right-3x" alt="Register icon" src="images/profile.png">REGISTER
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                
+
+                <div class="m-content-placement x-m-b-6x" data-grid="col-12">
+                    <div data-grid="col-12 stack-2">
+                        <div data-grid="col-4 pad-6x">
+                            <div data-grid="col-12">
+                                <section class="m-content-placement-item f-size-medium">
+                                    <picture style="border-radius: 8px;">
+                                        <img src="images/whatscool-485x273.png"
+                                            alt="Screenshot collage of new fonts" style="height:100%">
+                                    </picture>
+                                    <div>
+                                        <h3 class="c-heading x-m-t-5x">What's Cool for Windows developers</h3>
+                                        <p class="c-paragraph">Find out what's new for Windows developers  - the SDK, the new controls, and more.</p>
+                                        <a href="/windows/windows-for-developers/" class="c-call-to-action c-glyph">
+                                            <span>CHECK IT OUT</span>
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div data-grid="col-4 pad-6x">
+                            <div data-grid="col-12">
+                                <section class="m-content-placement-item f-size-medium">
+                                    <picture style="border-radius: 8px;">
+                                        <img src="images/windowsappsdk-720x405.png"
+                                            alt="SDK icon">
+                                    </picture>
+                                    <div>
+                                        <h3 class="c-heading x-m-t-5x">Windows App SDK</h3>
+                                        <p class="c-paragraph">Project Reunion and WinUI 3 are now known as the Windows App SDK. Learn about this new platform for creating apps to run on both Windows 10 and Windows 11.</p>
+                                        <a href="//docs.microsoft.com/windows/apps/windows-app-sdk/"
+                                            class="c-call-to-action c-glyph"> 
+                                            <span>LEARN MORE</span>
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+						<div data-grid="col-4 pad-6x">
+                            <div data-grid="col-12">
+                                <section class="m-content-placement-item f-size-medium">
+                                    <picture style="border-radius: 8px;">
+                                        <img src="images/environment.png"
+                                            alt="Text with WPF, UWP, WinUI 3, Windows Forms">
+                                    </picture>
+                                    <div>
+                                        <h3 class="c-heading x-m-t-5x">App development options</h3>
+                                        <p class="c-paragraph">All the information you need to get started building apps for the Windows desktop environment or updating existing apps to take advantage of the latest Windows operating system experiences.</p>
+                                        <a href="//docs.microsoft.com/windows/apps/get-started/?tabs=winui3"
+                                            class="c-call-to-action c-glyph"> 
+                                            <span>GET STARTED</span>
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+				
+				 <section data-grid="col-12" class="m-highlight-feature f-align-left" itemscope itemtype="https://schema.org/Product">
+                    <picture class="c-image">
+                        <source srcset="images/web3-1600x600.png" media="(min-width: 1779px)">
+                        <source srcset="images/web3-1600x600.png" media="(min-width: 1400px)">
+                        
+                        <source srcset="images/web3-1083x609.png" media="(min-width:768px)">
+                        
+                        <source srcset="images/web3-539x303.png" media="(min-width:0)">
+                        <img srcset="images/web3-1600x600.png" src="images/web3-1600x600.png" alt="Screen shot from BPM Techno app" style="border-radius: 8px;">
+                    </picture>
+                    <div>
+                        <h2 class="c-heading">Calling Web Devs!</h2>
+                        <p class="c-paragraph-4">Develop apps using web technologies that let you use the latest Windows features and wow your users.</p>
+                        <a href="//docs.microsoft.com/windows/web/" class="c-call-to-action c-glyph">
+                            <span>LEARN MORE</span>
+                        </a>                        
+                    </div>
+                </section>
+				
+				<div class="m-content-placement x-m-b-12x" data-grid="col-12">
+                    <div data-grid="col-12 stack-2">
+                        <div data-grid="col-4 pad-6x">
+                            <div data-grid="col-12">
+                                <section class="m-content-placement-item f-size-medium">
+                                    <div>
+                                        <h3 class="c-heading">Using WebView2</h3>
+                                        <p class="c-paragraph">Get started with WebView2 using the Windows App SDK and WinUI 3.</p>
+                                        <a href="//docs.microsoft.com/microsoft-edge/webview2/get-started/winui" class="c-call-to-action c-glyph">
+                                            <span>GET STARTED</span>
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div data-grid="col-4 pad-6x">
+                            <div data-grid="col-12">
+                                <section class="m-content-placement-item f-size-medium">
+                                    <div>
+                                        <h3 class="c-heading">Sample hybrid projects</h3>
+                                        <p class="c-paragraph">The WebView2 Samples repo includes sample projects for Win32, WPF, WinForms, and WinUI.</p>
+                                        <a href="//docs.microsoft.com/microsoft-edge/webview2/code-samples-links" class="c-call-to-action c-glyph">
+                                            <span>SAMPLE CODE</span>
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div data-grid="col-4 pad-6x">
+                            <div data-grid="col-12">
+                                <section class="m-content-placement-item f-size-medium">
+                                    <div>
+                                        <h3 class="c-heading">Sample PWA projects</h3>
+                                        <p class="c-paragraph">Use this list of sample apps to learn more about how to use PWA features and APIs.</p>
+                                        <a href="//docs.microsoft.com/microsoft-edge/progressive-web-apps-chromium/demo-pwas" class="c-call-to-action c-glyph">
+                                            <span>SAMPLE CODE</span>
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <section data-grid="col-12" class="m-highlight-feature f-align-right" itemscope itemtype="https://schema.org/Product">
+                    <picture class="c-image">
+                        <source srcset="images/store-1600x600.png" media="(min-width: 1779px)">
+                        <source srcset="images/store-1600x600.png" media="(min-width: 1400px)">
+                        
+                        <source srcset="images/store-1083x609.png" media="(min-width:768px)">
+                        
+                        <source srcset="images/store-539x303.png" media="(min-width:0)">
+                        <img srcset="images/store-1600x600.png" src="images/store-1600x600.png" alt="Screenshot of new Microsoft Store" style="border-radius: 8px;">
+                    </picture>
+                    <div>
+                        <h2 class="c-heading">Microsoft Store</h2>
+                        <p class="c-paragraph-4">Distribute your work to an audience of millions! Redesigned for developers to have new channels for discovery, including integration with your website and open support for more kinds of apps to run on Windows. </p>
+                        <a href="/microsoft-store?utm_campaign=launch&medium=windows-whatsnew&source=online" class="c-call-to-action c-glyph">
+                            <span>DISCOVER NOW</span>
+                        </a>                        
+                    </div>
+                </section>
+				
+
+				
+				<div class="m-content-placement x-m-b-12x" data-grid="col-12">
+                    <div data-grid="col-12 stack-2">
+                        <div data-grid="col-4 pad-6x">
+                            <div data-grid="col-12">
+                                <section class="m-content-placement-item f-size-medium">
+                                    <div>
+                                        <h3 class="c-heading">Open for all!</h3>
+                                        <p class="c-paragraph">Distribute your desktop app via the Store, no matter what app framework or packaging tool you use: Win32, .NET, Java, Electron, or MSIX. </p>
+                                        <a href="//docs.microsoft.com/windows/uwp/publish/" class="c-call-to-action c-glyph">
+                                            <span>LEARN MORE</span>
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div data-grid="col-4 pad-6x">
+                            <div data-grid="col-12">
+                                <section class="m-content-placement-item f-size-medium">
+                                    <div>
+                                        <h3 class="c-heading">PWA</h3>
+                                        <p class="c-paragraph">Build Progressive Web Apps with PWABuilder 3, debug with PWA support in the Microsoft Edge dev tools, and publish your PWA in the Store, including access to new commerce tools and capabilities! </p>
+                                        <a href="//docs.microsoft.com/windows/uwp/publish/pwa/overview" class="c-call-to-action c-glyph">
+                                            <span>LEARN MORE</span>
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                        <div data-grid="col-4 pad-6x">
+                            <div data-grid="col-12">
+                                <section class="m-content-placement-item f-size-medium">
+                                    <div>
+                                        <h3 class="c-heading">Sign up now!</h3>
+                                        <p class="c-paragraph">Join the waitlist to get your apps in the Store when it opens for business.</p>
+                                        <a href="//aka.ms/storepreviewwaitlist" class="c-call-to-action c-glyph">
+                                            <span>SIGN UP</span>
+                                        </a>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section data-grid="col-12" class="m-highlight-feature f-align-left x-m-b-12x" itemscope itemtype="https://schema.org/Product">
+                    <picture class="c-image">
+                        <source srcset="images/game-stack-1600x600.png" media="(min-width: 1779px)">
+                        <source srcset="images/game-stack-1600x600.png" media="(min-width: 1400px)">
+                        
+                        <source srcset="images/game-stack-1083x609.png" media="(min-width:768px)">
+                        
+                        <source srcset="images/game-stack-539x303.png" media="(min-width:0)">
+                        <img srcset="images/game-stack-1600x600.png" src="images/hero-1600x600.png" alt="Xbox game character" style="border-radius: 8px;">
+                    </picture>
+					<div>
+                        <h2 class="c-heading">GameStack</h2>
+                        <p class="c-paragraph-4">Use Game Stack to find the tools and services used by PC game developers around the world. The new Game Development Kit (GDK) offers access to the SDK with tools, libraries, and documentation needed to build amazing games for Windows.</p>
+                        <a href="//developer.microsoft.com/games " class="c-call-to-action c-glyph">
+                            <span>FIND OUT MORE</span>
+                        </a>
+                    </div>
+                </section>
+
+                  
+                <div class="m-content-placement x-p-b-12x" data-grid="col-12">
+                    <div data-grid="col-12 pad-6x stack-2">
+                        <div data-grid="col-6">
+                            <section class="m-content-placement-item f-size-large">
+                                <picture style="border-radius: 8px;">
+                                    
+                                    <img srcset="images/dev-experience-740-417.png" src="images/dev-experience-740-417.png" alt="Collage of dev platforms">
+                                </picture>
+                                <div>
+                                    <h3 class="c-heading">The best tools for developers are on Windows</h3>
+                                    <p class="c-paragraph">See why Windows 11 offers the best tools for developers that empower you to code with whatever language, framework, or environment you prefer.</p>
+                                    <a href="//developer.microsoft.com/windows/dev-tools/ " class="c-call-to-action c-glyph">START CODING</a>
+                                </div>
+                            </section>
+                        </div>
+                        <div data-grid="col-6">
+                            <section class="m-content-placement-item f-size-large">
+                                <picture style="border-radius: 8px;">
+                                    
+                                    <img srcset="images/insiders-740x417.png" src="images/insiders-740x417.png" alt="Photo of open workspace with person petting dog">
+                                </picture>
+                                <div>
+                                    <h3 class="c-heading">Become a Windows Insider!</h3>
+                                    <p class="c-paragraph">Start running Insider Preview builds of Windows 11 on your devices and see what's next for Windows. </p>
+                                    <div class="c-group">
+                                        <a href="//insider.windows.com/getting-started" class="c-call-to-action c-glyph">JOIN NOW</a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="cx-bg-gray-solid x-p-b-7x x-p-t-1x">
+                <div data-grid="container">
+                    <div class="m-heading x-type-center" data-grid="col-12">
+                        <h2 class="c-heading-3 f-lean">Latest news</h2>
+                    </div>
+                    <!-- XML urls -->
+                    <div id="cx-blog-urls"
+                         data-blog1="/windows/data/BuildingAppsFeed.xml"
+                         data-blog2="/windows/data/VisualStudioFeed.xml">
+                    </div>
+                    <!-- Start - 4 column cards.-->
+                    <div data-grid="col-12" class="m-card-group cxf-card-group x-m-b-12x">
+                        <div class="x-hidden network-error">Network error! Please refresh and try again.</div>
+                        <div class="x-hidden cx-no-urls">We could not find any XML.</div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        
+        <!-- <div class="cx-bottom-spacer" data-grid="container"> </div> -->
+        <!-- OnePlayer -->
+        <script type="text/javascript" src="https://www.microsoft.com/videoplayer/js/oneplayeriframe.js"></script>
+        <!-- script for video players -->
+        <script type="text/javascript" src="/windows/scripts/video-player-min.js"></script>
+        <script type="text/javascript" src="/windows/scripts/lightbox-min.js"></script>
+        <script type="text/javascript" src="https://www.microsoft.com/videoplayer/js/oneplayeriframe.js"></script>
+        <!-- blogs-min.js -->
+        <script type="text/javascript" src="/windows/scripts/blogs-min.js"></script>
+            
+
+        <!-- Harmony code ends here -->
+
+
+        <!-- Feedback sock ui -->
+        
+        <script>
+            $(function(){
+                $("#includedContent").load("include_feedback_socui.html");
+            });
+        </script>
+        <div id="includedContent"></div>
+        
+
+        <!-- Feedback sock control JS -->        
+                
+    </body>
+
+</html>

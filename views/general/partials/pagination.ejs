@@ -1,0 +1,28 @@
+<div class="pagination-wrapper text-center">
+    <ul class="page-numbers">
+        <%if(prevBtn){%>
+            <li><a class="prev page-numbers" href="<%=link%>page=<%=prevBtn%>"><i class="fa fa-arrow-left"></i></a></li>
+        <%}%>
+        
+        <%let count=1; paginationArr.slice(currentPage - 1).map(p=>{%>
+        
+            <%if(count <=9){%>
+                <%if(currentPage===p){%>
+                    <li><span class="page-numbers current"><%=p%></span></li>
+                <%}else{%>
+                    <li><a class="page-numbers" href="<%=link%>page=<%=p%>"><%=p%></a></li>
+                <%}%>
+                  
+            <%}%>
+        
+                <%count +=1%>
+        
+        <%})%>
+
+        <%if(nextBtn){%>
+            <li><a class="next page-numbers" href="<%=link%>page=<%=nextBtn%>"><i class="fa fa-arrow-right"></i></a></li>
+        <%}%>
+        
+    </ul>
+</div>
+

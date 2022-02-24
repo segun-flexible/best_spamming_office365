@@ -1,0 +1,194 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title><%=title%> - <%=websiteDetails.website_tagline %></title>
+    <meta name="title" content="<%=title%> - <%=websiteDetails.website_tagline %>">
+    <%-websiteDetails.website_header_code%>
+    <meta name="description" content="<%=shortDesc || websiteDetails.website_description%>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="<%=websiteDetails.website_favicon%>">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%=longUrl%>">
+    <meta property="og:title" content="<%=title%> - <%=websiteDetails.website_tagline %>">
+    <meta property="og:description" content="<%=shortDesc || websiteDetails.website_description%>">
+    
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="<%=longUrl%>">
+    <meta property="twitter:title" content="<%=title%> - <%=websiteDetails.website_tagline %>">
+    <meta property="twitter:description" content="<%=shortDesc || websiteDetails.website_description%>">
+    
+
+    <%if(isPost){%>
+        <%if(image){%>
+            <meta property="og:image" content="<%=homeUrl%><%=image%>">
+            <meta property="twitter:image" content="<%=homeUrl%><%=image%>">
+        <%}%>
+        
+    <%}%>
+
+    <!-- all css here -->
+    <!-- bootstrap v3.3.7 css -->
+    <link rel="stylesheet" href="/general/css/bootstrap.min.css">
+    <!-- animate css -->
+    <link rel="stylesheet" href="/general/css/animate.css">
+    <!-- owl.carousel.2.0.0-beta.2.4 css -->
+    <link rel="stylesheet" href="/general/css/owl.carousel.css">
+    <!-- font-awesome v4.6.3 css -->
+    <link rel="stylesheet" href="/general/css/font-awesome.min.css">
+    <!-- magnific-popup.css -->
+    <link rel="stylesheet" href="/general/css/magnific-popup.css">
+    <!-- slicknav.min.css -->
+    <link rel="stylesheet" href="/general/css/slicknav.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="/general/css/styles.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="/general/css/responsive.css">
+    <link rel="stylesheet" href="/general/css/custom.css">
+    <!-- modernizr css -->
+    <script src="/general/js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="/user/js/lib/style.css">
+    <style>
+        .header-area2 .mainmenu ul li a {
+    padding: 10px !important;
+    color: #d39b20 !important;
+}
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- header-area start -->
+    <header class="header-area header-area2">
+        <div class="header-top bg-1" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-12" >
+                        <div class="logo">
+                            <a href="/">
+                                <img class="" src="<%=websiteDetails.website_logo %>" alt="<%=websiteDetails.website_title %>" width="250px" height="100px">
+                            </a>
+                        </div>
+                    </div>
+<!-- social media icons can be placed here -->
+                </div>
+            </div>
+        </div>
+        <div class=" header-middle-area">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-md-12 col-md-12  text-white " style="background-color:#071d13 !important;">
+                        <div class="mainmenu ">
+                            <ul id="navigation " class="text-white">
+                                
+                                <%nav.map(nv =>{%>
+                                    <li><a href="<%=nv.children ? 'javascript:;' : nv.url%>"><%=nv.title%> <%-nv.children && "<i class='fa fa-angle-down'></i>"%></a>
+                                    <%if(nv.children){%>
+                                        <ul>
+                                            <%nv.children.map(cv =>{%>
+                                                <li><a href="<%=cv.url%>"><%=cv.title%></a></li>
+                                            <%})%>
+                                        </ul>
+                                    <%}%>
+                                    </li>
+                                <%})%>
+                                
+ 
+
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom-area">
+            <div class="container">
+                <div class="row">
+
+                                        <div class="col-md-5 d-none d-sm-block">
+                        <div class="header-banner">
+                        <%if(ads470A){%>
+                            <a href="<%=ads470A.a_link%>"><img style="width: 100%;height: 100px;object-fit: cover;" src="<%=ads470A.a_banner%>" alt=""></a>
+                        <%}else{%>
+                            <img src="/general/images/banner2.png" alt="">
+                        <%}%>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-12">
+ 
+                    </div>
+                    <div class="col-md-5 d-none d-sm-block">
+                        <div class="header-banner">
+                        <%if(ads470B){%>
+                            <a href="<%=ads470B.a_link%>"><img style="width: 100%;height: 100px;object-fit: cover;" src="<%=ads470B.a_banner%>" alt=""></a>
+                        <%}else{%>
+                            <img src="/general/images/banner2.png" alt="">
+                        <%}%>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                    
+                    <div class="col-12 mt-2 text-center">
+                        <div class="container">
+                            <marquee><p>Call: <b style="color: red;">09021188467</b> to buy COUPONS or become a VENDOR</p></marquee>
+                            <hr>
+                            <h2>YOU CAN START RIGHT AWAY!</h2>
+
+                            
+                                <%if(user){%>
+                                    <a class="btn btn-info col-4" href="/user/dashboard">Dashboard</a> 
+                              <a class="btn btn-primary col-4" href="/logout">Logout</a>
+                                <%}else{%>
+                                    <a class="btn btn-info col-4" href="/register">Register</a> 
+                              <a class="btn btn-primary col-4" href="/login">Login</a>
+                                <%}%>
+                               
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-5 col-sm-12 col-12">
+                        <div class="form-style search-form">
+                            <form action="/">
+                                <input type="text" name="search" placeholder="Search Post Here...">
+                                <button><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header-banner" style="display: block !important;">
+                            <%if(ads1170B){%>
+                                <a href="<%=ads1170B.a_link%>"><img style="width: 100%;height: 100px;object-fit: cover;" src="<%=ads1170B.a_banner%>"
+                                        alt=""></a>
+                            <%}else{%>
+                                <img src="/general/images/banner3.png" alt="">
+                            <%}%>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                <a href="https://wa.me/message/VCGKIQ2VBDL6H1" class="btn btn-md btn-primary btn-lg">Become A Vendor</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>

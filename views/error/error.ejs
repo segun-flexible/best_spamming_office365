@@ -1,0 +1,44 @@
+<html lang="zxx"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%=title%></title>
+
+    <link rel="stylesheet" href="/user/css/bootstrap.min.css">
+    <!-- themefy CSS -->
+    <!-- menu css  -->
+    <link rel="stylesheet" href="/user/css/metisMenu.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="/user/css/style.css">
+
+    <style>
+        button{
+            border: 0;
+            outline: 0;
+            color: #fff
+        }
+    </style>
+<body>
+    
+<div class="erroe_page_wrapper">
+    <div class="errow_wrap">
+        <div class="container text-center">
+            <img src="/user/img/bak_hovers/sad.png" alt="">
+            <div class="error_heading  text-center">
+                <h4 class="headline font-danger theme_color_1"><%=title%></h4>
+            </div>
+            <div class="col-md-8 offset-md-2 text-center"><%=text%></p>
+            </div>
+            <div class="error_btn  text-center">
+                <button class=" default_btn theme_bg_1 ">Go Back</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.querySelector("button").addEventListener("click",()=>{
+        window.history.back()
+    })
+</script>
+</body></html>

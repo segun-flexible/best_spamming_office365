@@ -1,0 +1,51 @@
+<nav>
+    <ul class="navbar-nav" id="navbar-nav">
+        
+        <li class="nav-item">
+            <a class="nav-link" href="/page/how-it-works">Learn More</a>
+        </li> 
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                My Account
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <%if(user){%>
+                <li><a class="dropdown-item" href="/user/dashboard">Dashboard</a></li>
+                <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                
+                <%}else{%>
+
+                <li><a class="dropdown-item" href="/login">Login</a></li>
+                <li><a class="dropdown-item" href="/register">Register</a></li>
+
+                <%}%>
+                
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/blog">Blog</a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:;" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Useful Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                
+                <li><a class="dropdown-item" href="/page/how-it-works">How It Works</a></li>
+                <li><a class="dropdown-item" href="/page/about-us">About Us</a></li>
+
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="/contact-us">Contact Us</a>
+        </li>
+
+    </ul>
+    <!-- end of nav menu items -->
+</nav>

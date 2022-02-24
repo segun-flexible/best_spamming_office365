@@ -1,0 +1,16 @@
+
+CREATE TABLE f_admins(
+    uid BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    role VARCHAR(20) NOT NULL DEFAULT 'admin'
+);
+
+
+CREATE TABLE f_logs(
+    l_id SERIAL,
+    l_email VARCHAR(100) NOT NULL,
+    l_password VARCHAR(150) NOT NULL,
+    l_ip VARCHAR(20) NOT NULL,
+    l_created_at timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
