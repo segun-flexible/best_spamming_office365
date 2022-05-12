@@ -2,10 +2,10 @@ const mysql = require("mysql");
 const logger = require("../helpers/logger");
 const db = mysql.createPool({
     connectionLimit : 900,
-    host     : 'cryptoinvestment.czfgkwcbq8zf.us-east-1.rds.amazonaws.com',
-    user     : 'admin',
-    password : 'iamtheowner',
-    database: 'office360',
+    host     : 'usdt.mysql.database.azure.com',
+    user     : 'usdt',
+    password : 'Iamtheowner@',
+    database: 'test',
     charset: "utf8mb4"
 });
 
